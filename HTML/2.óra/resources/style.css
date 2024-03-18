@@ -1,0 +1,187 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,5),rgba(0,0,0,0.4)), url("./img/background.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+
+    justify-content: end;
+    margin-top: 0px;
+
+}
+
+.main-nav li {
+    margin-right: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.main-nav li a {
+    color: #fff;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    padding: 7px 0px;
+    transition: 0.25s;
+
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #f77300;
+    transition: 0.25s;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font: size 260%;
+    word-spacing: 4px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-weight: 300;
+    padding: 15px 30px;
+    border-radius: 200px;
+    transition: 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    color: #fff;
+    background-color: #f77300;
+    border: 2px solid #fc8727;
+    margin-right: 15px;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    color: #f77300;
+    border: 1px solid #f77300;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fc8727;
+    border: 1px solid #fc8727;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    color: #fff;
+}
+
+@media screen and (max-width: 685px) {
+    .hero-text-box {
+        font-size: 70%;
+    }
+
+    .main-nav {
+        font-size: 70%;
+    }
+}
+
+
+#about {
+    background-image: url("./about.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-box {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 768px;
+
+}
+
+.about-box img {
+    border-radius: 20px;
+    margin-right: 25px;
+    height: 300px;
+
+}
+
+.about-box p {
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e67e23;
+}
+
+h2:after {
+    content: ' ';
+    display: block;
+    background-color: rgb(230, 126, 35);
+    width: 130px;
+    height: 25px;
+    margin: 20px auto 0px;
+}
+
+#feedback h2 {
+    color: #555;
+}
+
+.info {
+    text-align: center;
+}
+
+.feedback-box {
+    padding: 0 30px;
+}
+
+.feedback-box i {
+    color: #e67e23;
+    font-size: 300%;
+    position: relative;
+    right: 8px;
+}
+
+.title {
+    text-transform: uppercase;
+    margin: 0;
+
+}

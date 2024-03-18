@@ -1,0 +1,146 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+}
+.row {
+    margin: 0;
+}
+.nav {
+    list-style: none;
+    display: flex;
+
+    justify-content: center;
+    margin-top: 0px;
+
+}
+
+nav {
+    background: darkgreen;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.nav li {
+    margin-right: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.nav li a {
+    color: lightgreen;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    padding: 7px 0px;
+    transition: 0.25s;
+
+
+}
+
+.nav li a:hover,
+.nav li a:active {
+    border-bottom: 2px solid lawngreen;
+    transition: 0.25s;
+}
+
+main {
+    background-image: url("./img/dogs.jpg");
+    color: transparent;
+    background-position: center;
+    background-size: cover;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#sidebar {
+    background: green;
+    color: lightgreen;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+img{
+    height: 400px;
+    width: 400px;
+    border: 5px solid white;
+    border-radius: 5%;
+}
+
+#content1 {
+    background: green;
+    color: lightgreen;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content2 {
+    background: lightgreen;
+    color: green;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content3 {
+    background: green;
+    color: lightgreen;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+footer {
+    background: darkgreen;
+    color: lightgreen;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+            "nav"
+            "sidebar"
+            "main"
+            "content1"
+            "content2"
+            "content3"
+            "footer";
+    }
+}
