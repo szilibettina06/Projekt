@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+}
+
+nav{
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 0px;
+}
+ul{
+    text-align: center;
+    padding: 0px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px  20px;
+    
+}
+li a{
+    color: beige;
+}
+
+p{
+    background-color: lightblue;
+    color: blue;
+    width: 300px;
+    padding: 50px;
+    text-align: center;
+    margin: 0px auto;
+}
+@media screen and (max-width: 1024px) {
+    p{
+        background-color: black;
+        color: red;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 600px) {
+    p {
+        background-color: pink;
+        color: white;
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width:420px){
+    li{
+        display: block;
+        margin: 5px 0px;
+    }
+    p{
+        background-color: green;
+        color: white;
+        text-decoration: dotted;
+        max-width: 50%;
+    }
+}
