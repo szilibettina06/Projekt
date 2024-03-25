@@ -1,0 +1,32 @@
+html,body{
+   
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+svg{
+    width: 20px;
+    height: 20px;
+}
+#navbarTitle_color{
+    color: red;
+}
+h2{
+    text-align: center;
+}
+.img-responsive{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    height: 350px;
+    width: 350px;
+    
+}
+p{
+    text-align: justify;
+}
+@media screen and(max-width:768){
+    span{
+        display: block;
+    }
+}
